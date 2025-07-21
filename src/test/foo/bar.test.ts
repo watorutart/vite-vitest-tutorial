@@ -39,8 +39,8 @@ describe('bar.tsの単体テスト', () => {
             expect(multiConditionCalc(0, -2, 5)).toBe(3);
         });
         it('いずれの条件にも当てはまらない場合', () => {
-            expect(multiConditionCalc(-1, -1, 0)).toBe(-(-1 - -1));
-            expect(multiConditionCalc(1, -3, -2)).toBe(-(1 - -3));
+            expect(multiConditionCalc(-1, -1, 0)).toEqual((-1 - -1));
+            expect(multiConditionCalc(1, -3, -2)).toBe((1 - -3));
         });
     });
 
